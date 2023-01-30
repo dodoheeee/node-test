@@ -7,12 +7,9 @@ const app = express();
 // 라우팅
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    res.render("home/index");
-});
+const ctrl = require("./home.ctrl");
 
-router.get("/login", (req, res) => {
-    res.render("home/login");
-});
+router.get("/", ctrl.home);
+router.get("/login", ctrl.login);
 
 module.exports = router;

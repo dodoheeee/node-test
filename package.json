@@ -1,0 +1,23 @@
+{
+    "name": "node-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "bin": {
+        "node-test": "bin/www.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ./bin/www.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com-dohee:dodoheeee/node-test.git"
+    },
+    "author": "dohee kim",
+    "license": "ISC",
+    "devDependencies": {
+        "ejs": "^3.1.8",
+        "express": "^4.18.2"
+    }
+}
