@@ -6,11 +6,11 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.send("여기는 루트입니다.");
+    res.render("home/index");
 });
 
 app.get("/login", (req, res) => {
-    res.send("여기는 로그인 페이지 입니다.");
+    res.render("home/login");
 });
 
 app.listen(3000, () => {
