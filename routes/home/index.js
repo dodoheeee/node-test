@@ -4,6 +4,7 @@
 const express = require("express");
 const app = express();
 
+// 라우팅
 const router = express.Router();
 
 router.get("/", (req, res) => {
