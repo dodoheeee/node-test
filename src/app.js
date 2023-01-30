@@ -9,7 +9,7 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 //미들웨어
-const home = require("./routes/home");
+const home = require("../routes/home");
 app.use("/", home); // use => 미들 웨어를 등록해주는 메서드
 
 module.exports = app;
